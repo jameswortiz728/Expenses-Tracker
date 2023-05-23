@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
          <footer className="footer">
             <div className="content-container">
-                <h1>Contact me at james@jwortiz.io for any inquiries</h1>
+                <Link to="https://www.jwortiz.dev/"><h1>Return to JWOrtiz.dev</h1></Link>
             </div>
         </footer>
     )

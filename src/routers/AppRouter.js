@@ -4,7 +4,8 @@ import EditExpensePage from './../components/EditExpensePage';
 import ExpenseDashboardPage from './../components/ExpenseDashboardPage';
 import LoginPage from './../components/LoginPage';
 import NotFoundPage from './../components/NotFoundPage';
-import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
+import Footer from './../components/Footer';
+import { Router, Switch} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory'
 import PrivateRoute from  './PrivateRoute';
 import PublicRoute from  './PublicRoute';
@@ -21,6 +22,7 @@ const AppRouter = () => (
                 <PrivateRoute path="/edit/:id" component = {EditExpensePage}/>
                 <PublicRoute component={NotFoundPage} />
             </Switch>
+            <Footer/>
         </div>
     </Router>
 );

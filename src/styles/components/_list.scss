@@ -25,6 +25,7 @@
     transition: background .3s ease;
     &:hover {
         background: $off-white;
+        text-decoration: underline;
     }
     @media (min-width: $desktop-breakpoint) {
         align-items: center;

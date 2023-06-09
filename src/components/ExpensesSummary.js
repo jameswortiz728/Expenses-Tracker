@@ -1,5 +1,5 @@
 import React from 'react';
-import { getExpensesTotal, getExpensesCount } from '../selectors/expenses-total';
+import { getExpensesTotal} from '../selectors/expenses-total';
 import { connect } from 'react-redux';
 import selectExpenses from '../selectors/expenses';
 import numeral from 'numeral';
